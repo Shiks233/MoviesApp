@@ -5,7 +5,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.shiksha.moviesapp.databinding.ItemMovieBinding
-import com.shiksha.moviesapp.domain.Movie
+import com.shiksha.moviesapp.model.Movie
 
 class MovieAdapter(
     private val movies: List<Movie>,
@@ -18,7 +18,6 @@ class MovieAdapter(
             Glide.with(binding.moviePoster.context)
                 .load(movie.getPosterUrl())
                 .into(binding.moviePoster)
-
             binding.root.setOnClickListener {
                 onItemClick(movie)
             }

@@ -1,4 +1,4 @@
-package com.shiksha.moviesapp.domain
+package com.shiksha.moviesapp.model
 
 data class MovieResponse(
     val page: Int,
